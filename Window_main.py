@@ -11,10 +11,15 @@ class WindowClass(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
 
-        self.btnRefDevices.clicked.connect(self.getDevices)
+        self.btn_Searchdevice.clicked.connect(self.getDevices) # [select/refresh btn]
+        
 
     def getDevices(self):
         info_device.getDevices(self)
+        for i in glob.device:
+            print(i)
+            self.listDevice.additem(i)
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -1,5 +1,5 @@
 class glob:
     device = []
-    usb = []
+    remote = []
     tcp = []
     local = []

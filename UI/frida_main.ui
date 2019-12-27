@@ -87,14 +87,14 @@
         </property>
         <layout class="QVBoxLayout" name="verticalLayout">
          <item>
-          <widget class="QPushButton" name="btnRefDevices_2">
+          <widget class="QPushButton" name="btn_Searchdevice">
            <property name="text">
             <string>Search / Refresh</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="btnRefDevices">
+          <widget class="QPushButton" name="btn_Selectdevice">
            <property name="text">
             <string>Select</string>
            </property>
@@ -191,14 +191,14 @@
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
          <item>
-          <widget class="QPushButton" name="btnRefDevices_3">
+          <widget class="QPushButton" name="btn_Searchprocess">
            <property name="text">
             <string>Search / Refresh</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="btnRefDevices_4">
+          <widget class="QPushButton" name="btn_Selectprocess">
            <property name="text">
             <string>Select</string>
            </property>

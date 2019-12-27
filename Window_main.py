@@ -2,6 +2,7 @@ import sys
 from Info_util import info_device
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
+from Global import *
 
 form_class = uic.loadUiType("UI/frida_main.ui")[0]
 

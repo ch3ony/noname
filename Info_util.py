@@ -12,14 +12,21 @@ class info_device:
 
         except Exception as e:
             print(str(e))
-'''
-    def listDevices(list):
+
+    def listDevices(self):
         try:
-            device_manager = frida.get_device_manager()
-            device_list = device_manager.enumerate_devices()
-            glob.device = []
-            glob.device.append(device_list)
-            print(glob.device)
+            self.listDevice.clear()
+            for i in glob.device:
+                i_list = str(i)[str(i).find('(') + 1:str(i).find(')')].split(',')
+                device_ID = i_list[0][i_list[0].find('"') + 1:-1]
+                device_HOST = i_list[1][i_list[1].find('"') + 1:-1]
+                device_TYPE = i_list[2][i_list[2].find('\'') + 1:-1]
+                y = device_ID + " " + device_HOST + " " + device_TYPE
+                y = y.split(' ')
+                strFormat = '%20s%20s%20s'
+                strOut = ""
+                strOut += strFormat % (y[0], y[1], y[2])
+                print(strOut)
+                self.listDevice.addItem(strOut)
         except Exception as e:
             print(str(e))
-'''

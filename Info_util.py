@@ -34,7 +34,13 @@ class info_device:
                 strFormat = '%20s%20s%20s'
                 strOut = ""
                 strOut += strFormat % (y[0], y[1], y[2])
-                print(strOut)
+                glob.deviceList.append(i)
                 self.listDevice.addItem(strOut)
+        except Exception as e:
+            print(str(e))
+
+    def selectDevice(self):
+        try:
+            self.set_DeviceN.setText(str(glob.selectDevice))
         except Exception as e:
             print(str(e))

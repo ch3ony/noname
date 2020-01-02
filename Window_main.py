@@ -13,15 +13,22 @@ class WindowClass(QMainWindow, form_class):
         self.setupUi(self)
         info_device.initConfig(self)    # 200102. initConfig
         self.btn_Searchdevice.clicked.connect(self.getDevices)  # [select/refresh btn]
-        self.btn_Searchdevice.clicked.connect(self.listDevices)
+        self.btn_Selectdevice.clicked.connect(self.selDevice)
+        self.listDevice.itemClicked.connect(self.currentDevice)
 
 
 
     def getDevices(self):
         info_device.getDevices(self)
+        info_device.listDevices(self)   # move listDevices > [+]getDevices
 
-    def listDevices(self):
-        info_device.listDevices(self)
+    def currentDevice(self):
+        glob.selectDevice = glob.deviceList[self.listDevice.currentRow()]
+        print(glob.selectDevice)
+
+    def selDevice(self):
+        info_device.selectDevice(self)
+
 
 
 

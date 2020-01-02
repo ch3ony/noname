@@ -160,13 +160,13 @@
          <string>Process Name : </string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_5">
+       <widget class="QLabel" name="set_DeviceN">
         <property name="geometry">
          <rect>
           <x>162</x>
           <y>365</y>
-          <width>64</width>
-          <height>14</height>
+          <width>541</width>
+          <height>16</height>
          </rect>
         </property>
         <property name="text">
@@ -178,8 +178,8 @@
          <rect>
           <x>160</x>
           <y>410</y>
-          <width>64</width>
-          <height>14</height>
+          <width>541</width>
+          <height>16</height>
          </rect>
         </property>
         <property name="text">

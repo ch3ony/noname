@@ -3,4 +3,6 @@ class glob:
     remote = []
     tcp = []
     local = []
+    deviceList = []
+    selectDevice = []
     device_manager = None

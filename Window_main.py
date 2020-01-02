@@ -11,6 +11,7 @@ class WindowClass(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        info_device.initConfig(self)    # 200102. initConfig
         self.btn_Searchdevice.clicked.connect(self.getDevices)  # [select/refresh btn]
         self.btn_Searchdevice.clicked.connect(self.listDevices)
 

@@ -2,10 +2,18 @@ import frida
 from Global import *
 
 class info_device:
+
+    def initConfig(self):
+        try:
+            glob.device_manager = frida.get_device_manager()
+            glob.device_manager.enumerate_devices()
+        except Exception as e:
+            print(str(e))
+
     def getDevices(self):
         try:
-            device_manager = frida.get_device_manager()
-            device_list = device_manager.enumerate_devices()
+            # device_manager = frida.get_device_manager() / 200102. move initConfig
+            device_list = glob.device_manager.enumerate_devices()
             glob.device = []
             for i in device_list:
                 glob.device.append(i)

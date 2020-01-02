@@ -52,6 +52,9 @@
           <height>111</height>
          </rect>
         </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
        </widget>
        <widget class="QListWidget" name="listProcess">
         <property name="geometry">
@@ -61,6 +64,9 @@
           <width>541</width>
           <height>111</height>
          </rect>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
         </property>
        </widget>
        <widget class="QLabel" name="label">
@@ -273,7 +279,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
